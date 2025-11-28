@@ -22,6 +22,7 @@
         .link-button {
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            /* 淺灰色按鈕的主色調 */
         }
         .link-button:hover {
             transform: translateY(-2px);
@@ -32,20 +33,17 @@
 <body>
 
     <div class="w-full max-w-md mx-auto text-center p-6 sm:p-8 bg-white rounded-xl shadow-2xl">
-        <!-- 標題區塊 -->
+        <!-- 標題區塊：已統一為 2XL 字體、黑色、三行獨立顯示 -->
         <header class="mb-8">
-            <h1 class="text-4xl font-extrabold text-[#3b82f6] tracking-tight">
-                摺疊市
-            </h1>
-            <p class="mt-2 text-lg text-gray-500 font-medium">
-                — 創意台中，進行中 —
-            </p>
+            <p class="text-2xl font-bold text-gray-900 leading-tight">2025</p>
+            <p class="text-2xl font-bold text-gray-900 leading-tight mt-1">CREATIVE TAICHUNG</p>
+            <p class="text-2xl font-bold text-gray-900 leading-tight mt-1">DESIGN HUB　摺疊市</p>
         </header>
 
         <!-- 連結按鈕區塊 -->
         <div class="space-y-4">
-            <!-- 1. 官方網站 (已移除英文部分) -->
-            <a href="https://taichungdesignhub.tw" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-[#3b82f6] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2563eb]">
+            <!-- 1. 官方網站 -->
+            <a href="https://taichungdesignhub.tw" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-gray-100 text-gray-700 font-semibold rounded-lg shadow-lg hover:bg-gray-200">
                 <!-- 網站圖示 (Inline SVG) -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3">
                     <path d="M12 2a10 10 0 0 0 10 10 10 10 0 0 0-10 10A10 10 0 0 0 2 12 10 10 0 0 0 12 2z"></path>
@@ -58,7 +56,7 @@
             </a>
 
             <!-- 2. Facebook -->
-            <a href="https://facebook.com/creativetaichung" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-[#1877F2] text-white font-semibold rounded-lg shadow-lg hover:bg-[#156cd4]">
+            <a href="https://facebook.com/creativetaichung" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-gray-100 text-gray-700 font-semibold rounded-lg shadow-lg hover:bg-gray-200">
                 <!-- Facebook 圖示 (Inline SVG) -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3">
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
@@ -67,7 +65,7 @@
             </a>
 
             <!-- 3. Instagram -->
-            <a href="https://instagram.com/designhub_in_taichung" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-white font-semibold rounded-lg shadow-lg hover:opacity-90">
+            <a href="https://instagram.com/designhub_in_taichung" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-gray-100 text-gray-700 font-semibold rounded-lg shadow-lg hover:bg-gray-200">
                 <!-- Instagram 圖示 (Inline SVG) -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -78,7 +76,7 @@
             </a>
 
             <!-- 4. Line 官方帳號 -->
-            <a href="https://lin.ee/SX86H8A" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-[#00C300] text-white font-semibold rounded-lg shadow-lg hover:bg-[#00ae00]">
+            <a href="https://lin.ee/SX86H8A" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-gray-100 text-gray-700 font-semibold rounded-lg shadow-lg hover:bg-gray-200">
                  <!-- Line 圖示 (Inline SVG - 簡化聊天氣泡) -->
                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 mr-3">
                     <path d="M21 2H3C2.448 2 2 2.448 2 3v16c0 0.552 0.448 1 1 1h16c0.552 0 1-0.448 1-1V3c0-0.552-0.448-1-1-1zm-4.3 12.5H7.3c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h9.4c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5zm0-3H7.3c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h9.4c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5zm0-3H7.3c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h9.4c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"/>
