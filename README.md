@@ -1,1 +1,100 @@
 # designhub_in_taichung
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摺疊市 | 城市設計連結中心</title>
+    <!-- 載入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 設置 Inter 字體作為主要字體 */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* 淺灰色背景 */
+            color: #1f2937; /* 深灰色文字 */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .link-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="w-full max-w-md mx-auto text-center p-6 sm:p-8 bg-white rounded-xl shadow-2xl">
+        <!-- 標題區塊 -->
+        <header class="mb-8">
+            <h1 class="text-4xl font-extrabold text-[#3b82f6] tracking-tight">
+                摺疊市
+            </h1>
+            <p class="mt-2 text-lg text-gray-500 font-medium">
+                — 創意台中，進行中 —
+            </p>
+        </header>
+
+        <!-- 連結按鈕區塊 -->
+        <div class="space-y-4">
+            <!-- 1. 官方網站 -->
+            <a href="https://taichungdesignhub.tw" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-[#3b82f6] text-white font-semibold rounded-lg shadow-lg hover:bg-[#2563eb]">
+                <!-- 網站圖示 (Inline SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3">
+                    <path d="M12 2a10 10 0 0 0 10 10 10 10 0 0 0-10 10A10 10 0 0 0 2 12 10 10 0 0 0 12 2z"></path>
+                    <line x1="2.05" y1="12" x2="21.95" y2="12"></line>
+                    <path d="M12 2.05V21.95"></path>
+                    <path d="M7.4 5.37l9.2 13.26"></path>
+                    <path d="M5.37 7.4l13.26 9.2"></path>
+                </svg>
+                官方網站 (Official Website)
+            </a>
+
+            <!-- 2. Facebook -->
+            <a href="https://facebook.com/creativetaichung" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-[#1877F2] text-white font-semibold rounded-lg shadow-lg hover:bg-[#156cd4]">
+                <!-- Facebook 圖示 (Inline SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+                Facebook 臉書
+            </a>
+
+            <!-- 3. Instagram -->
+            <a href="https://instagram.com/designhub_in_taichung" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-white font-semibold rounded-lg shadow-lg hover:opacity-90">
+                <!-- Instagram 圖示 (Inline SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                Instagram
+            </a>
+
+            <!-- 4. Line 官方帳號 -->
+            <a href="https://lin.ee/SX86H8A" target="_blank" class="link-button flex items-center justify-center w-full py-3 px-6 bg-[#00C300] text-white font-semibold rounded-lg shadow-lg hover:bg-[#00ae00]">
+                 <!-- Line 圖示 (Inline SVG - 簡化聊天氣泡) -->
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 mr-3">
+                    <path d="M21 2H3C2.448 2 2 2.448 2 3v16c0 0.552 0.448 1 1 1h16c0.552 0 1-0.448 1-1V3c0-0.552-0.448-1-1-1zm-4.3 12.5H7.3c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h9.4c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5zm0-3H7.3c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h9.4c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5zm0-3H7.3c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h9.4c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"/>
+                </svg>
+                Line 官方帳號
+            </a>
+        </div>
+
+        <!-- 腳註/版權資訊 -->
+        <footer class="mt-8 pt-4 border-t border-gray-200">
+            <p class="text-xs text-gray-400">
+                &copy; 2025 Creative Taichung / 摺疊市設計實驗
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
